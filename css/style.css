@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --primary-color: #4D5566;
+    --secondary-color: #1ccd63;
+    --theme-color: #F39568;
+    --white: #ffffff;
+    --foot-color: #2D374B;
+}
+.nava{
+    text-decoration: none !important;
+}
+.nava:hover{
+    color: #fff !important;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: var(--white);
+    color: var(--primary-color);
+}
+
+::selection {
+    background-color: rgb(245, 245, 245);
+    color: var(--secondary-color);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.text-color {
+    color: var(--primary-color);
+}
+
+.span-color {
+    color: var(--secondary-color);
+}
+
+.logo {
+    width: 30px;
+}
+
+.my-btn {
+    padding: 8px 20px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 5px;
+}
+
+.my-primary-btn {
+    color: var(--white);
+    background: var(--primary-color);
+}
+
+.my-secondary-btn {
+    color: var(--white);
+    background: var(--secondary-color);
+}
+
+.my-removebg-btn {
+    background: transparent;
+    color: var(--primary-color);
+}
+
+.my-removebg-btn:hover {
+    background-color: #ededed;
+}
+
+/* ====== header =======  */
+
+header img {
+    border-radius: 40px 0 0 0;
+}
+
+.myicon {
+    padding: 15px 0;
+    transition: all 1s ease;
+}
+
+.myicon:hover i {
+    transform: scale(1.2) rotate(15deg);
+    transition: all 1s ease;
+}
+
+ul {
+    list-style: none;
+    margin-left: -30px;
+}
+
+.ceo-box p {
+    line-height: 16px;
+}
+
+.ceo-box span {
+    color: rgb(119, 119, 119);
+}
+
+.ceo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.speed-col-one {
+    border-right: 1px solid rgb(174, 172, 172);
+    border-bottom: 1px solid rgb(174, 172, 172);
+}
+
+.speed-col-two {
+    border-bottom: 1px solid rgb(174, 172, 172);
+}
+
+.speed-col-three {
+    border-right: 1px solid rgb(174, 172, 172);
+}
+
+.speed h2 {
+    font-size: 45px;
+}
+
+.card-pic {
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.mycard {
+    margin: 0 auto;
+}
+
+.mycard img {
+    width: 100%;
+    transition: all 1.3s ease;
+}
+
+.mycard:hover img {
+    transform: scale(1.1);
+}
+
+.mycard:hover i {
+    transform: translate(5px);
+    transition: all 1.3s ease;
+}
+
+/* ===== footer start  */
+footer {
+    background: var(--foot-color);
+}
+.my-foot-btn {
+    background: transparent;
+    color: rgb(216, 216, 216);
+}
+
+.my-foot-btn:hover {
+    background-color: #3d3d3d;
+}
+
+footer h2{
+    color: #a0a0a0;
+}
+footer h2 span{
+    color: #fff;
+}
+footer ul li{
+    margin: 10px 0;
+}
+footer a{
+    color: #cacaca;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+footer a:hover{
+    color: #ffffff;
+}
+
+footer h4{
+    color: #f0f0f0;
+    font-size: 18px;
+}
+
+footer p{
+    color: #cacaca;
+}
+
+
+/* button top code ----------------------------------------------------  */
+.topbtn {
+    display: none;
+    cursor: pointer;
+    position: fixed; 
+    bottom: 40px;
+    right: 20px;
+    z-index: 999;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background:var(--secondary-color);
+    border: none;
+  }
+  
+  .topbtn i{
+    font-size: 1.5vw;
+    color: #ffffff;
+  }
+
+       .topb {
+            height: 3px;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            background-color: teal;
+            width: 100%;
+            transform-origin: left;
+            scale: 0 1;
+            animation: scroll-watch linear;
+            animation-timeline: scroll();
+        }
+
+        @keyframes scroll-watch {
+            to {
+                scale: 1 1;
+            }
+        }
+
+       
